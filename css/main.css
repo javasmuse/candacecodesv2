@@ -16,8 +16,16 @@ a {
   text-decoration: none;
 }
 
-ul {
+.main-nav .main-menu {
   list-style: none;
+  font-size: large;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-start;
+  /* flex: 1; */
 }
 
 .container {
@@ -28,44 +36,25 @@ ul {
 /* Nav */
 .main-nav {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 60px;
-  padding: 20px 0;
-  font-family: "Roboto", sans-serif;
-  font-size: 21px;
-}
-
-.main-nav .logo {
-  width: 140px;
-  border-radius: 7%;
-  margin-top: 25rem;
-  margin-left: 10rem;
-  position: relative;
-  z-index: 3;
-}
-
-.main-nav ul {
-  display: flex;
   justify-content: flex-end;
+  align-items: center;
+  height: 3.5rem;
+  font-family: "Roboto", sans-serif;
 }
 
 .main-nav ul li {
   padding: 0 3rem;
 }
 
-.main-nav ul li a {
-  padding-bottom: 2px;
-}
 
 .main-nav ul li a:hover {
   color: #88c7e8;
 }
 
-.main-nav ul.main-menu {
+/* .main-nav ul.main-menu {
   flex: 1;
   margin-left: 20px;
-}
+} */
 
 .btn {
   cursor: pointer;
@@ -87,15 +76,37 @@ ul {
   height: 100vh;
   background: url("/images/showcase.JPG") no-repeat center center/cover;
   border-radius: 1%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  text-align: center;
-  justify-content: stretch;
-  align-content: center;
   position: relative;
   z-index: 2;
+}
+
+#big-head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+}
+
+.far-left {
+  align-self: flex-start;
+  padding: 5rem 5rem 0rem 5rem;
+}
+
+#big-head .far-left .logo {
+  width: 140px;
+  border-radius: 7%;
+  position: relative;
+  z-index: 3;
+}
+
+#big-head .more-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+  align-content: flex-start;
 }
 
 .showcase .btn {
@@ -108,32 +119,33 @@ ul {
   margin: 40px 0px 0px 30px;
 }
 
-.showcase h1 {
+.showcase .more-center h1 {
   color: #103649;
   font-family: "Dancing Script", cursive;
   text-shadow: 1px 1px #fff;
-  font-size: 60px;
-  padding: 40px 0px 0px 30px;
+  font-size: xxx-large;
   flex: 0 1 auto;
   align-self: center;
+  padding: 2rem;
 }
 
-.showcase p {
+.showcase .more-center p {
   font-family: "Dancing Script", cursive;
   text-shadow: .5px .5px #fff;
-  font-size: 33px;
+  font-size: xx-large;
   color: #103649;
   line-height: 1.6px;
   letter-spacing: .8px;
   flex: 0 1 auto;
-  padding: 10px 0px 0px 30px;
+  padding: 1rem 2rem;
   align-self: center;
 }
 
-.showcase p span {
-  background: rgba(73, 73, 73, 0.2);
+/* #big-head span {
+  background: rgba(128, 188, 228, 0.2);
+  border-radius: 1em;
   line-height: 1.8px;
-}
+} */
 
 footer {
   position: absolute;
@@ -179,6 +191,7 @@ footer .social .fab:hover {
   font-size: xxx-large;
   text-shadow: .5px .5px grey;
   padding: 1rem 2rem;
+
 }
 
 #about .profile {
@@ -196,9 +209,23 @@ footer .social .fab:hover {
   font-weight: bold;
 }
 
+#about .home-b {
+  align-self: center;
+  flex: 1 0 auto;
+  max-width: 800px;
+  letter-spacing: .5px;
+  padding: 2rem 2rem 2rem 2rem;
+  font-weight: bold;
+}
+
+.stats ul li {
+  list-style: none;
+}
+
 #about .a {
   text-indent: 4em;
   font-weight: 100;
+
 }
 
 #contact {
@@ -210,7 +237,7 @@ footer .social .fab:hover {
   align-content: space-evenly;
   font-family: "Roboto", sans-serif;
   color: #103649;
-  padding: 3rem;
+  padding: 3rem 0rem 0rem 2rem;
 }
 
 #contact h4 {
@@ -218,6 +245,10 @@ footer .social .fab:hover {
   font-size: xxx-large;
   text-shadow: .5px .5px grey;
   padding: 1rem 2rem;
+}
+
+#contact ul {
+  list-style: none;
 }
 
 #contact ul li {
@@ -230,6 +261,28 @@ footer .social .fab:hover {
 #contact ul li mark {
   background-color: #88c7e8;
   color: #103649;
+}
+
+.home-go {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 0rem 2rem 0rem 0rem;
+  color: #103649;
+}
+
+.home-go .fas {
+  align-self: flex-end;
+}
+
+.home-go a:hover {
+  color: #88c7e8;
+}
+
+.home-go p {
+  align-self: flex-end;
 }
 
 #home-a .container {
@@ -296,9 +349,18 @@ footer .social .fab:hover {
   align-self: center;
 }
 
+#end-shot {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-self: center;
+  padding: 1rem 0rem .5rem 0rem;
+}
+
 #main-projects {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   font-family: "Roboto", sans-serif;
@@ -309,7 +371,7 @@ footer .social .fab:hover {
 #main-projects #mePic {
   border-radius: 3%;
   max-height: auto;
-  max-width: 600px;
+  max-width: 300px;
 }
 
 #main-projects h1 {
