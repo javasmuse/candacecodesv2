@@ -122,7 +122,7 @@ a {
 .showcase .more-center h1 {
   color: #103649;
   font-family: "Dancing Script", cursive;
-  text-shadow: 2px 2px #88c7e8;
+  text-shadow: -1px -1px 3px #fff;
   font-size: xxx-large;
   flex: 0 1 auto;
   align-self: center;
@@ -131,7 +131,7 @@ a {
 
 .showcase .more-center p {
   font-family: "Dancing Script", cursive;
-  text-shadow: 2px 2px #88c7e8;
+  text-shadow: -1px -1px 3px #fff;
   font-size: xx-large;
   color: #103649;
   line-height: 1.6px;
