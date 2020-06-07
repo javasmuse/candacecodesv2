@@ -353,7 +353,7 @@ footer .social .fab:hover {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-self: center;
+  width: auto;
   height: 240px;
   padding: 1rem 0rem .5rem 0rem;
 }
@@ -392,4 +392,49 @@ footer .social .fab:hover {
 #main-projects h3 {
   padding: 1rem;
   align-self: center;
+}
+
+#project-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+#project-list .rrcalculator {
+  align-self: flex-end;
+  margin: 1rem 8rem 1rem 0rem;
+}
+
+.rrcalculator .btn {
+
+  cursor: pointer;
+  display: inline-block;
+  letter-spacing: .5px;
+  border: 0;
+  border-radius: 20px;
+  background: #103649;
+  color: #fff;
+  font-size: small;
+  padding: .5rem 1rem;
+}
+
+.btn:hover {
+  color: #88c7e8;
+}
+
+.home-go-proj {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.home-go-proj ul {
+  list-style-type: none;
+}
+
+.home-go-proj li {
+  padding: 1rem 3rem;
 }
