@@ -372,6 +372,7 @@ footer .social .fab:hover {
   border-radius: 3%;
   max-height: auto;
   max-width: 300px;
+  display: flex;
 }
 
 #main-projects h1 {
