@@ -368,15 +368,12 @@ footer .social .fab:hover {
   padding: 5rem;
 }
 
+
 #main-projects #mePic {
   border-radius: 3%;
-  max-height: auto;
-  max-width: 300px;
+  width: 240px;
   display: flex;
 
-  @media max-width 600px {
-    max-width: 8rem;
-  }
 }
 
 
