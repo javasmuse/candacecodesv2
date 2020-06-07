@@ -1,4 +1,4 @@
-const Store = require('../models/Store');
+const Store = require('projects/geoTrav/models/Store');
 
 // @desc Get all stores
 // @route GET /api/v1/stores
@@ -15,7 +15,9 @@ exports.getStores = async (req, res, next) => {
           });
      } catch (err) {
           console.error(err);
-          res.status(500).json({error: 'Server error' });
+          res.status(500).json({
+               error: 'Server error'
+          });
      }
 };
 
@@ -25,17 +27,21 @@ exports.getStores = async (req, res, next) => {
 
 exports.addStore = async (req, res, next) => {
      try {
-         const store = await Store.create(req.body);
+          const store = await Store.create(req.body);
 
-         return res.status(200).json({
-              success: true,
-              data: store
-         })
+          return res.status(200).json({
+               success: true,
+               data: store
+          })
      } catch (err) {
           console.error(err);
-          if(err.code === 11000) {
-               return res.status(400).json({ error: 'This store already exists' });
+          if (err.code === 11000) {
+               return res.status(400).json({
+                    error: 'This store already exists'
+               });
           }
-          res.status(500).json({error: 'Server error' });
+          res.status(500).json({
+               error: 'Server error'
+          });
      }
 };

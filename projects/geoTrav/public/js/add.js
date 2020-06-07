@@ -6,7 +6,7 @@ const storeAddress = document.getElementById('store-address');
 async function addStore(e) {
     e.preventDefault();
 
-    if(storeId.value === '' || storeAddress.value === '') {
+    if (storeId.value === '' || storeAddress.value === '') {
         alert('Please fill in fields');
     }
 
@@ -21,17 +21,17 @@ async function addStore(e) {
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify(sendBody) 
-    }); 
+            body: JSON.stringify(sendBody)
+        });
 
-        if(res.status === 400) {
+        if (res.status === 400) {
             throw Error('Store already exists!')
-        } 
+        }
 
         alert('Store added!');
-        window.location.href = '/index.html';
+        window.location.href = "/projects/geoTrav/public/index.html";
     } catch (err) {
-        alert(err);  
+        alert(err);
         return;
     }
 }
