@@ -373,7 +373,12 @@ footer .social .fab:hover {
   max-height: auto;
   max-width: 300px;
   display: flex;
+
+  @media max-width 600px {
+    max-width: 8rem;
+  }
 }
+
 
 #main-projects h1 {
   padding: 1rem;
