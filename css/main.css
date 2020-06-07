@@ -355,6 +355,7 @@ footer .social .fab:hover {
   display: flex;
   position: relative;
   height: 240px;
+  max-width: 1200;
   padding: 1rem 0rem .5rem 0rem;
 }
 
