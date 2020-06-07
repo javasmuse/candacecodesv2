@@ -353,9 +353,7 @@ footer .social .fab:hover {
 
 #end-shot {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  width: auto;
+  position: relative;
   height: 240px;
   padding: 1rem 0rem .5rem 0rem;
 }
