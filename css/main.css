@@ -424,7 +424,9 @@ footer .social .fab:hover {
   color: #88c7e8;
 }
 
-.home-go-proj {
+
+
+/* .home-go-proj ul {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -434,8 +436,14 @@ footer .social .fab:hover {
 
 .home-go-proj ul {
   list-style-type: none;
+  margin-right: 3rem;
 }
 
 .home-go-proj li {
-  padding: 1rem 3rem;
+  padding: 1rem;
+
 }
+
+.home-go-proj li .fas:hover {
+  color: #88c7e8;
+} */

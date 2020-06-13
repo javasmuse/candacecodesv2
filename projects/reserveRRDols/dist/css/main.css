@@ -1,0 +1,140 @@
+ h1 {
+     text-align: center;
+     padding-top: 2.5rem;
+     font-family: "Dancing Script",
+         cursive;
+     font-size: xxx-large;
+     text-shadow: .5px .5px grey;
+
+ }
+
+ .form-box {
+     display: grid;
+     grid-template-columns: [fleft] 4fr [fcenter] 3fr [fright] 3fr;
+     grid-template-rows: [one] 1fr [two] 1fr [three] 1fr [four] 1fr [five] 1fr [six] 1fr;
+ }
+
+ .form-box .input-group-one {
+     grid-row-start: one;
+     grid-column-start: fcenter;
+ }
+
+ .form-box .input-group-two {
+     grid-row-start: one;
+     grid-column-start: fcenter;
+ }
+
+ .input-group-one {
+     padding: 2rem 0rem, 0rem, 0rem;
+     justify-self: start;
+     margin-top: 2rem;
+     font-family: "Roboto",
+         sans-serif;
+     font-size: larger;
+     font-weight: bold;
+ }
+
+ .input-group-two {
+     margin-top: 5rem;
+     justify-self: start;
+     font-family: "Roboto",
+         sans-serif;
+     font-size: larger;
+     font-weight: bold;
+ }
+
+ .form-box .pic-one {
+     grid-row-start: one;
+     grid-column-start: fleft;
+     grid-row-end: three;
+ }
+
+ .form-box .pic-two {
+     grid-row-start: three;
+     grid-column-start: fleft;
+     grid-row-end: five;
+
+ }
+
+ .form-box .pic-three {
+     grid-row-start: three;
+     grid-column-start: fcenter;
+     grid-row-end: five;
+
+ }
+
+ .form-box .pic-four {
+     grid-row-start: one;
+     grid-column-start: fright;
+     grid-row-end: two;
+
+ }
+
+ .pic-one #utb {
+     opacity: 0.5;
+     border-radius: 12rem;
+     max-height: 250px;
+     margin-left: 4rem;
+ }
+
+
+ .pic-two #rbm {
+     opacity: 0.6;
+     border-radius: 8rem;
+     max-height: 300px;
+     margin-left: 8rem;
+     padding-top: 2rem;
+ }
+
+ .pic-three #rbs {
+     opacity: 0.6;
+     border-radius: 12rem;
+     max-height: 200px;
+     margin-left: 1rem;
+ }
+
+ .input-group-addon {
+     padding: 1rem;
+ }
+
+ .pic-four #psu {
+     opacity: 0.9;
+     border-radius: 12rem;
+     max-height: 100px;
+     margin-left: 5rem;
+ }
+
+ .pic-five #bfi {
+     opacity: 0.9;
+     border-radius: 12rem;
+     max-height: 100px;
+     margin-left: 5rem;
+ }
+
+
+ .form-box .form-group-three {
+     grid-row-start: two;
+     grid-column-start: fcenter;
+ }
+
+ .form-box #results {
+     grid-row-start: two;
+     grid-column-start: fcenter;
+     font-family: "Roboto",
+         sans-serif;
+     font-size: larger;
+     font-weight: bold;
+
+ }
+
+
+
+ .form-box .ref {
+     grid-row-start: five;
+     grid-column-start: fleft;
+     margin-left: 2rem;
+     font-family: "Roboto",
+         sans-serif;
+     font-size: larger;
+     text-shadow: 2x 2px blanchedalmond;
+ }
