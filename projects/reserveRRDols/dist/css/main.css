@@ -9,6 +9,7 @@
  .mainGrid .ref {
      font-family: "Roboto", sans-serif;
      padding-bottom: 1rem;
+     padding-top: 2rem;
      font-size: 1vw;
      text-shadow: 0.2px 0.2px #000;
      color: #000;
@@ -47,13 +48,12 @@
  }
 
  .mainGrid .insignia #psu {
-     max-width: 280px;
+     max-width: 15vw;
 
  }
 
  .mainGrid .insignia #bfi {
-     max-width: 280px;
-     align-self: center;
+     max-width: 15vw;
  }
 
 
