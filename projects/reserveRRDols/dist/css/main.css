@@ -1,207 +1,93 @@
  .mainGrid {
      display: grid;
      align-items: center;
-     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+     grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
      padding: 0rem 2rem;
-     ;
+
  }
 
  .mainGrid .ref {
      font-family: "Roboto", sans-serif;
      padding-bottom: 1rem;
      padding-top: 2rem;
-     font-size: 1vw;
+     font-size: 16px;
      text-shadow: 0.2px 0.2px #000;
      color: #000;
+     align-self: start;
  }
 
- .mainGrid .ref a {
-     color: #fff;
- }
-
-
- .mainGrid .ref a:hover {
-     color: #88c7e8;
- }
-
-
- .mainGrid .calculator p {
-     font-family: "Roboto",
-         sans-serif;
-     font-size: 2vw;
-     color: #000;
-     padding-bottom: .5rem;
-
- }
-
- .mainGrid .calculator .input-group-addon {
-     font-family: "Roboto",
-         sans-serif;
-     font-size: 1vw;
-     color: #103649;
+ @media (max-width: 480px) {
+     .mainGrid .ref {
+         display: none;
+         /* font-family: "Roboto", sans-serif;
      padding-bottom: 1rem;
-
- }
-
- .mainGrid .insignia {
-     padding: 3rem;
- }
-
- .mainGrid .insignia #psu {
-     max-width: 15vw;
-
- }
-
- .mainGrid .insignia #bfi {
-     max-width: 15vw;
- }
-
-
-
-
-
-
-
-
-
-
- /* h1 {
-     text-align: center;
-     padding-top: 2.5rem;
-     font-family: "Dancing Script",
-         cursive;
-     font-size: xxx-large;
-     text-shadow: .5px .5px grey;
-
- }
-
- .form-box {
-     display: grid;
-     grid-template-columns: [fleft] 4fr [fcenter] 3fr [fright] 3fr;
-     grid-template-rows: [one] 1fr [two] 1fr [three] 1fr [four] 1fr [five] 1fr [six] 1fr;
- }
-
- .form-box .input-group-one {
-     grid-row-start: one;
-     grid-column-start: fcenter;
- }
-
- .form-box .input-group-two {
-     grid-row-start: one;
-     grid-column-start: fcenter;
- }
-
- .input-group-one {
-     padding: 2rem 0rem, 0rem, 0rem;
-     justify-self: start;
-     margin-top: 2rem;
-     font-family: "Roboto",
-         sans-serif;
-     font-size: larger;
-     font-weight: bold;
- }
-
- .input-group-two {
-     margin-top: 5rem;
-     justify-self: start;
-     font-family: "Roboto",
-         sans-serif;
-     font-size: larger;
-     font-weight: bold;
- }
-
- .form-box .pic-one {
-     grid-row-start: one;
-     grid-column-start: fleft;
-     grid-row-end: three;
- }
-
- .form-box .pic-two {
-     grid-row-start: three;
-     grid-column-start: fleft;
-     grid-row-end: five;
-
- }
-
- .form-box .pic-three {
-     grid-row-start: three;
-     grid-column-start: fcenter;
-     grid-row-end: five;
-
- }
-
- .form-box .pic-four {
-     grid-row-start: one;
-     grid-column-start: fright;
-     grid-row-end: two;
-
- }
-
- .pic-one #utb {
-     opacity: 0.5;
-     border-radius: 12rem;
-     max-height: 250px;
-     margin-left: 4rem;
- }
-
-
- .pic-two #rbm {
-     opacity: 0.6;
-     border-radius: 8rem;
-     max-height: 300px;
-     margin-left: 8rem;
      padding-top: 2rem;
- }
+     font-size: 12px;
+     text-shadow: 0.2px 0.2px #000;
+     color: #000; */
+     }
 
- .pic-three #rbs {
-     opacity: 0.6;
-     border-radius: 12rem;
-     max-height: 200px;
-     margin-left: 1rem;
- }
-
- .input-group-addon {
-     padding: 1rem;
- }
-
- .pic-four #psu {
-     opacity: 0.9;
-     border-radius: 12rem;
-     max-height: 100px;
-     margin-left: 5rem;
- }
-
- .pic-five #bfi {
-     opacity: 0.9;
-     border-radius: 12rem;
-     max-height: 100px;
-     margin-left: 5rem;
- }
+     .mainGrid .ref a {
+         color: #fff;
+     }
 
 
- .form-box .form-group-three {
-     grid-row-start: two;
-     grid-column-start: fcenter;
- }
-
- .form-box #results {
-     grid-row-start: two;
-     grid-column-start: fcenter;
-     font-family: "Roboto",
-         sans-serif;
-     font-size: larger;
-     font-weight: bold;
-
- }
+     .mainGrid .ref a:hover {
+         color: #88c7e8;
+     }
 
 
+     .mainGrid .calculator p {
+         font-family: "Roboto",
+             sans-serif;
+         font-size: 26px;
+         color: #000;
+         padding-bottom: .5rem;
+         align-self: start;
 
- .form-box .ref {
-     grid-row-start: five;
-     grid-column-start: fleft;
-     margin-left: 2rem;
-     font-family: "Roboto",
-         sans-serif;
-     font-size: larger;
-     text-shadow: 2x 2px blanchedalmond;
- } */
+     }
+
+     @media (max-width: 480px) .mainGrid .calculator .input-group-addon {
+         font-family: "Roboto",
+             sans-serif;
+         font-size: 16px;
+         color: #103649;
+         padding-bottom: 1rem;
+         align-self: start;
+
+     }
+
+     .mainGrid .insignia {
+         padding: 3rem;
+     }
+
+     .mainGrid .insignia #psu {
+         max-width: 15vw;
+
+     }
+
+     .mainGrid .insignia #bfi {
+         max-width: 15vw;
+     }
+
+     .pictures {
+         display: grid;
+         align-items: center;
+         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+         padding: 2rem;
+     }
+
+     .pictures .stuff {
+         position: relative;
+         z-index: 2;
+     }
+
+     .pictures .stuff #utb,
+     #rbm,
+     #rbs,
+     #mlb,
+     #wix {
+         max-height: 300px;
+         max-width: 300px;
+
+     }

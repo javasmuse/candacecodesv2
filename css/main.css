@@ -18,7 +18,19 @@ a {
 
 .main-nav .main-menu {
   list-style: none;
-  font-size: large;
+  font-size: 14px;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-content: flex-start;
+  /* flex: 1; */
+}
+
+@media (max-width: 480px) .main-nav .main-menu {
+  list-style: none;
+  font-size: 10px;
   padding: 0 2rem;
   flex-wrap: wrap;
   display: flex;
@@ -48,6 +60,10 @@ a {
 
 
 .main-nav ul li a:hover {
+  color: #88c7e8;
+}
+
+@media (max-width: 480px) .main-nav ul li a:hover {
   color: #88c7e8;
 }
 
