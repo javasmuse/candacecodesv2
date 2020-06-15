@@ -19,8 +19,9 @@
  @media (max-width: 480px) {
      .mainGrid .ref {
          font-family: "Roboto", sans-serif;
+         align-self: start;
          padding-bottom: 1rem;
-         padding-top: 4rem;
+         padding-top: 1rem;
          font-size: 12px;
          text-shadow: 0.2px 0.2px #000;
          color: #000;
