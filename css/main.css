@@ -343,8 +343,9 @@ footer .social .fab:hover {
 
 #home-b .stats {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 1rem;
+  padding: 0rem 2rem 0rem 2rem;
   text-align: center;
   font-family: "Roboto", sans-serif;
   position: relative;
@@ -354,13 +355,14 @@ footer .social .fab:hover {
 }
 
 #home-b .stats div {
-  padding: 3rem 0;
+  padding: 2.5rem 0;
   background: #f4f4f4;
 }
 
-#home-b .stats .stats-title {
+
+#home-b .stats #home-b .stats .stats-title {
   font-weight: bold;
-  padding: 1rem;
+  padding-top: 1rem;
 }
 
 #home-b .fas {
