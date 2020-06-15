@@ -51,23 +51,32 @@
 
           <p> Reserve Retirement Calculator
           </p>
-          <form id="loan-form" class="form-box">
-            <div class="input-group-one">
-              <span class="input-group-addon">Your Total Points</span>
-              <input type="number" class="form-control" id="points" placeholder="Your Total Points" />
+
+          <form id="loan-form">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">Your Total Points</span>
+                <input type="number" class="form-control" id="points" placeholder="Total Points" />
+              </div>
             </div>
-            <div class="input-group-two">
-              <span class="input-group-addon">Your Final Monthly Base $</span>
-              <input type="number" class="form-control" id="finalPay" placeholder="Your Final Monthly Base Pay" />
+
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon">Your Final Monthly Base $</span>
+                <input type="number" class="form-control" id="finalPay" placeholder="Final Monthly Base Pay" />
+              </div>
+            </div>
+
+
+
+            <div class="form-group-three">
+              <input type="submit" value="Calculate" class="btn btn-dark btn-block" />
             </div>
           </form>
-          <div class="form-group-three">
-            <input type="submit" value="Calculate" class="btn btn-dark btn-block" />
-          </div>
           <div id="results" class="pt-4">
             <div class="form-group">
               <div class="input-group">
-                <span class="input-group-addon">Your Monthly Retirement Pay <div class="dollar">$</div></span>
+                <span class="input-group-addon" width="100px">Your Monthly Retirement $</span>
                 <input type="number" class="form-control" id="monthly-payment" disabled />
               </div>
             </div>
@@ -97,6 +106,8 @@
 
             <img src="/projects/reserveRRDols/dist/images/EAGLE_under_full_sail_in_2013.jpg" alt="Barque Eagle"
               id="wix">
+
+            <img src="/projects/reserveRRDols/dist/images/USCG_defender_class_NY_harbor.jpg" alt="RBS 25" id="rbs1">
 
           </div>
 

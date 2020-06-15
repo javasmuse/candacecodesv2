@@ -20,7 +20,6 @@
      .mainGrid .ref {
          font-family: "Roboto", sans-serif;
          align-self: start;
-         padding-bottom: 1rem;
          padding-top: 1rem;
          font-size: 12px;
          text-shadow: 0.2px 0.2px #000;
@@ -77,6 +76,28 @@
      }
  }
 
+
+
+ #results {
+     padding-top: 1rem;
+ }
+
+ #monthly-payment {
+     font-weight: 500;
+     color: green;
+ }
+
+ @media (max-width: 360px) {
+     .mainGrid .calculator .input-group-addon {
+         font-family: "Roboto",
+             sans-serif;
+         font-size: 14px;
+         color: #103649;
+         padding-bottom: 1rem;
+     }
+ }
+
+
  .mainGrid .insignia {
      padding: 2rem 2rem 4rem 9rem;
  }
@@ -114,6 +135,7 @@
      z-index: 2;
  }
 
+
  .pictures .stuff #utb,
  #rbm,
  #rbs,
@@ -121,5 +143,11 @@
  #wix {
      max-height: 300px;
      max-width: 300px;
+     border-radius: 50%;
+ }
+
+ .pictures .stuff #rbs1 {
+     max-height: 330px;
+     max-width: 330px;
      border-radius: 50%;
  }
