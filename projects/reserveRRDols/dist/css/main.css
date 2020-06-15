@@ -9,7 +9,7 @@
  .mainGrid .ref {
      font-family: "Roboto", sans-serif;
      padding-bottom: 1rem;
-     padding-top: 2rem;
+     padding-top: 3rem;
      font-size: 16px;
      text-shadow: 0.2px 0.2px #000;
      color: #000;
@@ -18,76 +18,76 @@
 
  @media (max-width: 480px) {
      .mainGrid .ref {
-         display: none;
-         /* font-family: "Roboto", sans-serif;
-     padding-bottom: 1rem;
-     padding-top: 2rem;
-     font-size: 12px;
-     text-shadow: 0.2px 0.2px #000;
-     color: #000; */
-     }
-
-     .mainGrid .ref a {
-         color: #fff;
-     }
-
-
-     .mainGrid .ref a:hover {
-         color: #88c7e8;
-     }
-
-
-     .mainGrid .calculator p {
-         font-family: "Roboto",
-             sans-serif;
-         font-size: 26px;
+         font-family: "Roboto", sans-serif;
+         padding-bottom: 1rem;
+         padding-top: 4rem;
+         font-size: 12px;
+         text-shadow: 0.2px 0.2px #000;
          color: #000;
-         padding-bottom: .5rem;
-         align-self: start;
-
      }
+ }
 
-     @media (max-width: 480px) .mainGrid .calculator .input-group-addon {
+ .mainGrid .ref a {
+     color: #fff;
+ }
+
+
+ .mainGrid .ref a:hover {
+     color: #88c7e8;
+ }
+
+
+ .mainGrid .calculator p {
+     font-family: "Roboto",
+         sans-serif;
+     font-size: 42px;
+     color: #000;
+     padding-bottom: .5rem;
+     align-self: start;
+
+ }
+
+ @media (max-width: 480px) {
+     .mainGrid .calculator .input-group-addon {
          font-family: "Roboto",
              sans-serif;
          font-size: 16px;
          color: #103649;
          padding-bottom: 1rem;
          align-self: start;
-
      }
+ }
 
-     .mainGrid .insignia {
-         padding: 3rem;
-     }
+ .mainGrid .insignia {
+     padding: 4rem 2rem 4rem 8rem;
+ }
 
-     .mainGrid .insignia #psu {
-         max-width: 15vw;
+ .mainGrid .insignia #psu {
+     max-width: 15vw;
 
-     }
+ }
 
-     .mainGrid .insignia #bfi {
-         max-width: 15vw;
-     }
+ .mainGrid .insignia #bfi {
+     max-width: 15vw;
+ }
 
-     .pictures {
-         display: grid;
-         align-items: center;
-         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-         padding: 2rem;
-     }
+ .pictures {
+     display: grid;
+     align-items: center;
+     grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+     padding: 2rem;
+ }
 
-     .pictures .stuff {
-         position: relative;
-         z-index: 2;
-     }
+ .pictures .stuff {
+     position: relative;
+     z-index: 2;
+ }
 
-     .pictures .stuff #utb,
-     #rbm,
-     #rbs,
-     #mlb,
-     #wix {
-         max-height: 300px;
-         max-width: 300px;
-
-     }
+ .pictures .stuff #utb,
+ #rbm,
+ #rbs,
+ #mlb,
+ #wix {
+     max-height: 300px;
+     max-width: 300px;
+ }
