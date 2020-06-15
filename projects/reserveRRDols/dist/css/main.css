@@ -1,6 +1,6 @@
  .mainGrid {
      display: grid;
-     align-items: center;
+     align-items: start;
      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
      padding: 0rem 2rem;
 
@@ -16,7 +16,7 @@
      align-self: start;
  }
 
- @media (max-width: 480px) {
+ @media (max-width: 360px) {
      .mainGrid .ref {
          font-family: "Roboto", sans-serif;
          align-self: start;
@@ -48,11 +48,20 @@
 
  }
 
- @media (max-width: 480px) {
+ @media (max-width: 360px) {
+     .mainGrid .calculator p {
+         font-family: "Roboto", sans-serif;
+         font-size: 22px;
+         color: #000;
+         align-items: start;
+     }
+ }
+
+ @media (max-width: 360px) {
      .mainGrid .calculator .input-group-addon {
          font-family: "Roboto",
              sans-serif;
-         font-size: 16px;
+         font-size: 14px;
          color: #103649;
          padding-bottom: 1rem;
          align-self: start;
