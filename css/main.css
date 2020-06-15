@@ -338,7 +338,6 @@ footer .social .fab:hover {
   font-family: "Roboto", sans-serif;
   align-self: center;
   flex: 0 1 auto;
-  padding-bottom: 1rem;
 }
 
 #home-b .stats {
@@ -355,12 +354,12 @@ footer .social .fab:hover {
 }
 
 #home-b .stats div {
-  padding: 2.5rem 0;
+  padding: 2rem 0rem 2.5rem 0rem;
   background: #f4f4f4;
 }
 
 
-#home-b .stats #home-b .stats .stats-title {
+.stats .stats-title {
   font-weight: bold;
   padding-top: 1rem;
 }
