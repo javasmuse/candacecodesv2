@@ -1,6 +1,6 @@
  .mainGrid {
      display: grid;
-     align-items: start;
+     align-items: center;
      grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
      padding: 0rem 2rem;
 
@@ -37,14 +37,17 @@
      color: #88c7e8;
  }
 
+ .mainGrid .calculator {
+     align-self: start;
+ }
 
  .mainGrid .calculator p {
      font-family: "Roboto",
          sans-serif;
      font-size: 42px;
      color: #000;
+     padding-top: 2rem;
      padding-bottom: .5rem;
-     align-self: start;
 
  }
 
@@ -53,8 +56,15 @@
          font-family: "Roboto", sans-serif;
          font-size: 22px;
          color: #000;
-         align-items: start;
      }
+ }
+
+ .mainGrid .calculator .input-group-addon {
+     font-family: "Roboto",
+         sans-serif;
+     font-size: 18px;
+     color: #103649;
+     padding-bottom: 1rem;
  }
 
  @media (max-width: 360px) {
@@ -64,27 +74,38 @@
          font-size: 14px;
          color: #103649;
          padding-bottom: 1rem;
-         align-self: start;
      }
  }
 
  .mainGrid .insignia {
-     padding: 4rem 2rem 4rem 8rem;
+     padding: 2rem 2rem 4rem 9rem;
  }
 
  .mainGrid .insignia #psu {
-     max-width: 15vw;
+     max-width: 12vw;
 
  }
 
  .mainGrid .insignia #bfi {
-     max-width: 15vw;
+     max-width: 12vw;
+ }
+
+ @media (max-width: 480px) {
+     .mainGrid .insignia #psu {
+         max-width: 15vw;
+     }
+ }
+
+ @media (max-width: 480px) {
+     .mainGrid .insignia #bfi {
+         max-width: 15vw;
+     }
  }
 
  .pictures {
      display: grid;
      align-items: center;
-     grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
      padding: 2rem;
  }
 
