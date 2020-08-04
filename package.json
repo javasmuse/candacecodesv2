@@ -1,0 +1,19 @@
+{
+  "name": "candacecodesv3",
+  "version": "3.0.0",
+  "description": "personal portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javasmuse/candacecodesv2.git"
+  },
+  "author": "Candace",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/javasmuse/candacecodesv2/issues"
+  },
+  "homepage": "https://github.com/javasmuse/candacecodesv2#readme"
+}
