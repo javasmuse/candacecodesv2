@@ -30,6 +30,8 @@
     align-items: center;
     height: 3.5rem;
     font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: black;
 }
 
 .main-nav ul li {
@@ -74,24 +76,29 @@ body {
     text-shadow: 0.4px 0.4px gray;
 }
 
+@media (max-width: 480px) {
+    .out-box {
+        background: steelblue;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+    }
+}
+
 .out-box {
     background-image: linear-gradient(to right, rgb(20, 105, 196), rgb(15, 132, 153), rgb(76, 128, 152), rgb(15, 132, 153), rgb(20, 105, 196));
     max-width: 1200px;
     border-radius: 6em;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     align-content: center;
     margin: 3em 2em 0 13em;
 }
 
-.out-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
 
 .today-box {
     display: flex;
