@@ -1,0 +1,145 @@
+.main-nav,
+.main-menu {
+    list-style: none;
+    font-size: 18px;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-start;
+}
+
+@media (max-width: 480px) {
+    .main-nav .main-menu {
+        list-style: none;
+        font-size: 10px;
+        padding: 0 2rem;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-content: flex-start;
+        /* flex: 1; */
+    }
+}
+
+.main-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 3.5rem;
+    font-family: "Roboto", sans-serif;
+}
+
+.main-nav ul li {
+    padding: 0 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+
+.main-nav ul li a:hover {
+    color: #88c7e8;
+}
+
+@media (max-width: 480px) .main-nav ul li a:hover {
+    color: #88c7e8;
+}
+
+/* .main-nav ul.main-menu {
+  flex: 1;
+  margin-left: 20px;
+} */
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: .5px;
+    border: 0;
+    border-radius: 8%;
+    background: #103649;
+    color: #fff;
+    font-size: small;
+}
+
+.btn:hover {
+    color: #88c7e8;
+}
+
+body {
+    background-color: rgb(204, 202, 202);
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: 0.4px 0.4px gray;
+}
+
+.out-box {
+    background-image: linear-gradient(to right, rgb(20, 105, 196), rgb(15, 132, 153), rgb(76, 128, 152), rgb(15, 132, 153), rgb(20, 105, 196));
+    max-width: 1200px;
+    border-radius: 6em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 3em 2em 0 13em;
+}
+
+.out-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.today-box {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin: 2em 0 1em 0;
+    font-size: x-large;
+}
+
+.temp-box,
+.descrip-box,
+.main-box {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.sunrise-set-box {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 2em;
+    ;
+}
+
+.second-box {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+h1,
+#city,
+#windD,
+#windS,
+#condy,
+#sunny,
+#setty,
+#today,
+p {
+    font-size: x-large;
+    margin-right: 1em;
+}
+
+#temp {
+    font-size: x-large;
+}
